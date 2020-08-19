@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student" class="com.test.autowire.Student" autowire="byType">
+		<property name="name" value="Bob"></property>
+		<property name="age" value="24"></property>
+	</bean>
+	
+	<bean id = "course" class="com.test.autowire.Course">
+		<property name="id" value="2"></property>
+		<property name="name" value="C++"></property>
+	</bean>
+	
+	<!-- <bean id = "hardwareCourse" class="com.test.autowire.Course">
+		<property name="id" value="2"></property>
+		<property name="name" value="C++"></property>
+	</bean> -->
+	
+</beans>
