@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id = "hello" class="com.test.ioc.Hello"></bean>
+ <bean id="employeeDao" class="com.test.ioc.EmployeeDao"></bean>
+ 
+ <bean id="employee" class="com.test.ioc.Employee">
+ 	<property name="name" value="Apparao"></property>
+ 	<property name="age" value="30"></property>
+ 	<property name="address" value="Bangalore"></property>
+ </bean>
+</beans>
