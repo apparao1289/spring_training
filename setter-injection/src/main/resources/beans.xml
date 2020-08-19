@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="employee" class="com.test.setter.injection.Employee">
+		<property name="name" value="Ramu"></property>
+		<property name="age" value="20"></property>
+		<property name="designation" value="Software engineer"></property>
+		<property name="address" value="Miami FL"></property>
+	</bean>
+
+	<bean id="empDao" class="com.test.setter.injection.EmployeeDaoImpl"></bean>
+	
+	<bean id="empService" class="com.test.setter.injection.EmployeeServiceImpl">
+		<property name="employeeDao" ref="empDao">
+		</property>
+	</bean>
+</beans>
