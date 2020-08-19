@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="student" class="com.test.constuctor.injection.Student">
+		<constructor-arg value="Anand" index="0" type="java.lang.String"></constructor-arg>
+		<constructor-arg value="US" index="1" type="java.lang.String"></constructor-arg>
+		<constructor-arg value="25" index="2" type="int"></constructor-arg>
+	</bean>
+	
+	<bean id="studentServieImpl" class="com.test.constuctor.injection.StudentServiceImpl"></bean>
+	<bean id="studentBusinessImpl" class="com.test.constuctor.injection.StudentBusinessImpl">
+		<constructor-arg ref="studentServieImpl"></constructor-arg>
+	</bean>
+</beans>
