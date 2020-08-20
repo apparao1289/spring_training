@@ -1,0 +1,10 @@
+Spring core modules interview questions:
+=======================================
+1. Explain IOC ?
+2. Explain dependency injection
+3. Types dependency injection
+4. whatb are the bean scopes available
+5. explain Auto wiring
+6. Difference between BeanFactory and ApplicationContext
+7. Bean inheritance ( parent and abstarct attributes)
+8. given two clasess write the bean definations.
