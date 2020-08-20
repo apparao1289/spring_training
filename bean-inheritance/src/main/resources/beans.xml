@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean id="address" class="com.test.bean.inheritance.Address" abstract="true">
+ 	<property name="streetName" value="M G Road"></property>
+ 	<property name="city" value="Banaglore"></property>
+ 	<property name="zip" value="560023"></property>
+ 	<property name="state" value="KA"></property>
+ </bean>
+
+ <bean id="employee" class="com.test.bean.inheritance.Employee" parent="address">
+ 	<property name="id" value="2345" />
+ 	<property name="name" value="Ramu" />
+ 	<property name="designation" value="Software Engineer" />
+ </bean>
+</beans>
